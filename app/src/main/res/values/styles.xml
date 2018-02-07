@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--全局设置activity进入和退出动画-->
+        <item name="android:windowAnimationStyle">@style/ActivityInOutAnim</item>
+
+        <!--使用系统自带的几种动画实现activity跳转，包括explode，fade,Slide ,使用该种动画需要api>=21-->
+        <!--<item name="android:windowEnterTransition">@transition/activity_slide</item>-->
+        <!--<item name="android:windowExitTransition">@transition/activity_slide</item>-->
+        <!--<item name="android:windowContentTransitions">true</item>-->
+    </style>
+
+    <style name="ActivityInOutAnim">
+        <item name="android:activityOpenEnterAnimation">@anim/fade_right_top_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_top_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_bottom_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_left_bottom_out</item>
+    </style>
+
+    <!--使用系统自带的几种动画实现activity跳转，包括explode，fade,Slide ,使用该种动画需要api>=21-->
+    <style name="activitySelfAnim">
+        <item name="android:windowEnterTransition">@transition/activity_explode</item>
+        <item name="android:windowExitTransition">@transition/activity_explode</item>
+    </style>
+
+</resources>

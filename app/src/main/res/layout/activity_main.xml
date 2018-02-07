@@ -1,0 +1,100 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:navigationIcon="@drawable/ic_account_circle_white_24dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:title="ShareJoys"
+        app:titleTextColor="#FFF"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/way_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_btn"
+                android:padding="10dp"
+                android:text="方式一（overridePendingTransition）"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/way_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_btn"
+                android:padding="10dp"
+                android:text="方式二（overridePendingTransition--全局设置）"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/way_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_btn"
+                android:padding="10dp"
+                android:text="方式三（ActivityOptions--Fade\\Slide\\Explode）"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/way_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_btn"
+                android:padding="10dp"
+                android:text="方式四（ActivityOptions--Fade\\Slide\\Explode--全局）"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/way_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_btn"
+                android:padding="10dp"
+                android:text="方式五（ActivityOptions--共享元素）"
+                android:textColor="#FFFFFF"
+                android:transitionName="btn"/>
+
+            <TextView
+                android:id="@+id/way_six"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_btn"
+                android:padding="10dp"
+                android:text="方式六（ActivityOptions--多个共享元素）"
+                android:textColor="#FFFFFF"
+                android:transitionName="btn_six"/>
+
+            <ImageView
+                android:id="@+id/main_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/timg"
+                android:transitionName="beauty_img"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
