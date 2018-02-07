@@ -10,7 +10,7 @@
         <!--全局设置activity进入和退出动画-->
         <item name="android:windowAnimationStyle">@style/ActivityInOutAnim</item>
 
-        <!--使用系统自带的几种动画实现activity跳转，包括explode，fade,Slide ,使用该种动画需要api>=21-->
+        <!--&lt;!&ndash;使用系统自带的几种动画实现activity跳转，包括explode，fade,Slide ,使用该种动画需要api>=21&ndash;&gt;-->
         <!--<item name="android:windowEnterTransition">@transition/activity_slide</item>-->
         <!--<item name="android:windowExitTransition">@transition/activity_slide</item>-->
         <!--<item name="android:windowContentTransitions">true</item>-->
